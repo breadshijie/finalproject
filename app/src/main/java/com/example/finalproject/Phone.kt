@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class listen_Keyboard : AppCompatActivity() {
+class Phone : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_listen_keyboard)
+        setContentView(R.layout.activity_phone)
 
-        findViewById<Button>(R.id.btn_back2).setOnClickListener{
-            val intent = Intent (this, SecondFragment::class.java)
+        findViewById<Button>(R.id.btn_back2_1).setOnClickListener{
+            val intent = Intent (this, ThirdFragment::class.java)
             startActivity(intent)
             finish()
         }

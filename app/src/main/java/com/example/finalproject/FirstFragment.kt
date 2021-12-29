@@ -22,18 +22,11 @@ class FirstFragment : Fragment(){
                               savedInstanceState: Bundle?): View?{
         Log.e("FirstFragment","onCreateView")
         return inflater.inflate(R.layout.first_fragment, container ,false)
-
-
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         Log.e("FirstFragment", "onActivityCreated")
-
-        val btn_choice1 = getView()?.findViewById<Button>(R.id.btn_choice1)?.setOnClickListener{
-            val intent = Intent (getActivity(),listen_mic::class.java)
-            getActivity()?.startActivity(intent)
-        }
     }
 
     override fun onStart(){

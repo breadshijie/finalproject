@@ -8,7 +8,7 @@
 
 
     <Button
-        android:id="@+id/btn_choice3"
+        android:id="@+id/btn_choice2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="進入"
@@ -17,6 +17,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.942" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

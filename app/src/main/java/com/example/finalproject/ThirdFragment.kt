@@ -25,8 +25,8 @@ class ThirdFragment : Fragment(){
         super.onActivityCreated(savedInstanceState)
         Log.e("ThirdFragment","onActivityCreated")
 
-        val btn_choice3 = getView()?.findViewById<Button>(R.id.btn_choice3)?.setOnClickListener{
-            val intent = Intent (getActivity(),listen_Mouse::class.java)
+        val btn_choice2 = getView()?.findViewById<Button>(R.id.btn_choice2)?.setOnClickListener{
+            val intent = Intent (getActivity(),Phone::class.java)
             getActivity()?.startActivity(intent)
         }
     }

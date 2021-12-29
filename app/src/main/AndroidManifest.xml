@@ -11,13 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Finalproject">
         <activity
+            android:name=".Accessories3"
+            android:exported="false" />
+        <activity
+            android:name=".Accessories2"
+            android:exported="false" />
+        <activity
+            android:name=".Phone"
+            android:exported="false" />
+        <activity
+            android:name=".Accessories"
+            android:exported="false" />
+        <activity
+            android:name=".FourthFragment"
+            android:exported="false" />
+        <activity
             android:name=".listen_Mouse"
-            android:exported="false" />
-        <activity
-            android:name=".listen_Keyboard"
-            android:exported="false" />
-        <activity
-            android:name=".listen_mic"
             android:exported="false" />
         <activity
             android:name=".ThirdFragment"

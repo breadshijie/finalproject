@@ -18,10 +18,6 @@ class MainActivity : AppCompatActivity() {
         val adapter = ViewPagerAdapter(supportFragmentManager)
         findViewById<ViewPager>(R.id.viewPager).adapter = adapter
 
-        val btn_choice = findViewById<Button>(R.id.btn_choice)?.setOnClickListener{
-            val intent = Intent (this,listen_mic::class.java)
-            startActivity(intent)
-        }
     }
 
 
@@ -61,7 +57,8 @@ class ViewPagerAdapter(fm: androidx.fragment.app.FragmentManager): FragmentPager
     override fun getItem(position: Int) = when(position){
         0 -> FirstFragment()
         1 -> SecondFragment()
-        else -> ThirdFragment()
+        2 -> ThirdFragment()
+        else -> FourthFragment()
     }
-    override fun getCount() = 3
+    override fun getCount() = 4
 }
